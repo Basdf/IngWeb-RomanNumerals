@@ -75,6 +75,9 @@ describe('RomanNumerals Importan Cases', () => {
   it('Convert the number 999', () => {
     expect(service.romanNumber(999)).toEqual('CMXCIX');
   });
+  it('Convert the number 1000', () => {
+    expect(service.romanNumber(1000)).toEqual('M');
+  });
 });
 describe('RomanNumerals Random Cases', () => {
   let service: RomanNumeralsService;

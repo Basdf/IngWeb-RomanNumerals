@@ -58,9 +58,13 @@ export class RomanNumeralsService {
   }
 
   romanNumber(number: number): string {
+    if (number > 1000) {
+      return "Solo se admiten valores entre 1 y 1000"
+    }
     if (number === 1000) {
       return this.number1000()
     }
+
     let unidades = number % 10
     let decenas = (number % 100) - (number % 100) % 10
     let centenas = number - (number % 100);

@@ -1,0 +1,29 @@
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.inline{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+	width: 50%;
+}
+
+.inline label{
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.inline input{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-size: 1em;
+	font-weight: 300;
+	padding: 5px;
+	width: 100%;
+}

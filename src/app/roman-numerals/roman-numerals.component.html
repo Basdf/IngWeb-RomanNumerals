@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <input >
-</body>
-</html>
+<div class="container">
+
+  <div class="inline">
+    <label>Número arábigo</label>
+    <br>
+    <input type="text" [(ngModel)]="numero.arabigo" class="roman-input" id="arabic" #arabic
+      (keyup)="TranformarNumero()" />
+  </div>
+  <div class="inline">
+    <label>Número romano</label>
+    <br>
+    <input type="text" class="roman-input" id="roman" [(ngModel)]="numero.romano" />
+  </div>
+</div>
